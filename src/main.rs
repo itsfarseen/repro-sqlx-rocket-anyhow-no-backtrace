@@ -8,6 +8,7 @@ use sqlx;
 
 // 2. Backtrace is generated correctly in a non async main() function
 
+// 3. Backtrace is generated correctly in #[tokio::main] async main() function
 
 #[rocket::main]
 async fn main() -> Result<()> {

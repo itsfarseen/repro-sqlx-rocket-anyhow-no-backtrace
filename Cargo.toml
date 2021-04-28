@@ -9,4 +9,5 @@ edition = "2018"
 [dependencies]
 anyhow = "1.0.40"
 rocket = { git = "https://github.com/SergioBenitez/Rocket" }
-sqlx = { version = "0.5.2", features = ["postgres" ,"runtime-tokio-rustls"] }
+sqlx = { version = "0.5.2", features = ["postgres", "runtime-tokio-rustls"] }
+tokio = { version = "1.5.0", features = ["full"] }
