@@ -1,7 +1,7 @@
+#![feature(backtrace)]
+
 #[macro_use]
 extern crate rocket;
-
-use anyhow::{anyhow, Context, Result};
 
 // 1. If I remove SQLx import, backtrace is generated correctly
 use sqlx;
@@ -12,8 +12,8 @@ use sqlx;
 //    removed from Cargo.toml
 
 #[rocket::main]
-async fn main() -> Result<()> {
-    Err(anyhow!("foo"))?;
+async fn main() -> Result<(),()> {
+    println!("{}", std::backtrace::Backtrace::force_capture());
     Ok(())
 }
 
