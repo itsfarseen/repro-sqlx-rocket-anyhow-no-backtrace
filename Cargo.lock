@@ -798,6 +798,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "sqlx-no-backtrace"
+version = "0.1.0"
+dependencies = [
+ "sqlx",
+]
+
+[[package]]
 name = "sqlx-rt"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -806,13 +813,6 @@ dependencies = [
  "once_cell",
  "tokio",
  "tokio-rustls",
-]
-
-[[package]]
-name = "sqlx-tokio-no-backtrace"
-version = "0.1.0"
-dependencies = [
- "sqlx",
 ]
 
 [[package]]

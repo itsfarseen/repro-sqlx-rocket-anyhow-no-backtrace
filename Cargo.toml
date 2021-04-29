@@ -1,5 +1,5 @@
 [package]
-name = "sqlx-tokio-no-backtrace"
+name = "sqlx-no-backtrace"
 version = "0.1.0"
 authors = ["Farseen <zah4n5dz@anonaddy.me>"]
 edition = "2018"
