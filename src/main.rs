@@ -8,7 +8,8 @@ use sqlx;
 
 // 2. Backtrace is generated correctly in a non async main() function
 
-// 3. Backtrace is generated correctly in #[tokio::main] async main() function
+// 3. Backtrace is generated correctly in #[tokio::main] async main() function, if rocket is
+//    removed from Cargo.toml
 
 #[rocket::main]
 async fn main() -> Result<()> {
